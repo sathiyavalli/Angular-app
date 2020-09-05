@@ -16,6 +16,7 @@ export class HeroesComponent implements OnInit {
   hero:string;
 
   heroes: Hero[];
+  deletedHero: Hero;
 
   constructor(private heroService: HeroService, private messageService: MessageService) { }
 
@@ -26,7 +27,16 @@ export class HeroesComponent implements OnInit {
   this.selectedHero = hero;
   this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
 }
-
+delete(hero: Hero){
+  this.deletedHero = hero;
+  const index = this.heroes.indexOf(hero);
+  if(index > -1){
+    this.heroes.splice(index,1);
+    this.messageService.messages = [];
+    this.messageService.add(`HeroesComponent: Deleted hero id=${this.deletedHero.id}`);
+  }
+  console.log(this.deletedHero);
+}
 getHeroes(): void {
   this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes);

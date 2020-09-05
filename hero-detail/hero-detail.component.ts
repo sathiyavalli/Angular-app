@@ -10,6 +10,7 @@ import { HEROES } from '../mock-heroes';
 })
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero;
+  @Input() oldHero: Hero;
   @Output() valueChange = new EventEmitter();
   heroes: Hero[] = HEROES;
 

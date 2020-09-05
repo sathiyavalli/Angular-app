@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MessageService } from '../message.service';
+import { Hero } from '../hero';
 
 
 @Component({
@@ -8,6 +9,7 @@ import { MessageService } from '../message.service';
   styleUrls: ['./messages.component.css']
 })
 export class MessagesComponent implements OnInit {
+  @Input() heroDeleted: Hero;
 
   constructor(public messageService: MessageService) {}
 
