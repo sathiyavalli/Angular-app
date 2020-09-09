@@ -1,4 +1,4 @@
-# Angular-app
+# Angular-app with crud example
 Angular app with form edit and update and clearing the datas. Used angular 10 for the development
 
 *Features*<br>
@@ -8,4 +8,6 @@ Used services, modules, @input, @output, Observable features.<br>
 
 *More to go*
 Pager feature.
+Keywords<br>
+Angular app, Angular crud, crud-app 
 
