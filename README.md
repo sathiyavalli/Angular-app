@@ -7,7 +7,7 @@ Add, Edit,update,delete each data values by clicking each values on screen that 
 Used services, modules, @input, @output, Observable features.<br>
 
 *More to go*
-Pager feature.
+Pager feature.<br>
 Keywords<br>
 Angular app, Angular crud, crud-app 
 
