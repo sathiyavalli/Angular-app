@@ -10,5 +10,5 @@ Used services, modules, @input, @output, Observable features.<br>
 *More to go*
 Pager feature.<br>
 Keywords<br>
-Angular10 app, Angular10 crud, crud-app 
+Angular10 app, Angular10 crud, crud-app, Angular10 crud app, heroes crud-app, heroes web-app
 
